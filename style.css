@@ -76,69 +76,6 @@ img {
   display: block;
 }
 
-
-
-/* Header Section*/
-/* header {
-  display: grid;
-  grid-template-columns: 2fr 1fr;  
-  grid-template-rows: auto auto;   
-  gap: 1rem 2rem;                  
-  align-items: center;
-}
-
-
-.main-title-section {
-  grid-column: 1;
-  grid-row: 1;
-  justify-self: start;
-}
-
-.sayuh-title {
-  width: min(50vw, 700px);
-  height: auto;
-}
-
-.main-scroll-down {
-  grid-column: 2;
-  grid-row: 1;
-  align-self: end;
-  justify-self: start;
-}
-
-.header-nav-quote {
-  grid-column: 1;
-  grid-row: 2;
-  display: grid;
-  grid-template-columns: auto auto; 
-  align-items: start;
-  gap: 2rem;
-}
-
-.main-quote-container {
-    justify-self: start;
-    
-} 
-
-.main-quote-text {
-    margin: 0px;
-}
-
-.nav-menu {
-  display: flex;          
-  gap: 2rem;              
-  list-style: none;       
-  padding: 0;             
-  margin: 0px;          
-}   
-
-
-.header-blank {
-  grid-column: 2;
-  grid-row: 2;
-} 
-*/
-
 /* Header */
 header {
   display: grid;
@@ -197,7 +134,7 @@ main {
 main p {
   text-indent: .75rem;
   margin-top: var(--font-lg);
-  border-bottom: 1px solid rgb(226, 226, 232);
+  border-bottom: 1px solid rgb(122, 122, 122);
   padding-bottom: var(--font-lg);
   line-height: var(--line-normal);
 }
@@ -205,10 +142,11 @@ main p {
 
 .welcome-title {
  
- background-color: #f0f0fd; /* soft pastel or accent */
+ /*background-color: #f0f0fd;  soft pastel or accent */
 }
 
 .welcome-desctiption-text {
+  max-width: 100%;
   margin-top: 0px;
 }
 
@@ -217,7 +155,7 @@ main p {
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 8px;
+
 }
 
 
@@ -246,7 +184,7 @@ main p {
 .bookshelf-title,
 .network-title {
   margin-bottom: 0.5em;
-  background-color: #f0f0fd; /* soft pastel or accent */
+  /*background-color: #f0f0fd; /* soft pastel or accent */
   
 }
 
@@ -275,8 +213,7 @@ a.social-links {
 }
 .page-container {
   margin: 0 auto;
-  width: 90%;           /* 90% of viewport width */
-  max-width: 94vw;      /* stops it if needed but still dynamic */
+  width: min(94%, 1920px);
   box-sizing: border-box;
 }
 
@@ -322,7 +259,7 @@ p.footer-anchors {
 }
 
 .header-nav-quote {
-  max-width: 90%;
+  width: min(50vw, 700px);
   grid-column: 1;
   grid-row: 2;
   display: grid;
@@ -341,7 +278,7 @@ p.footer-anchors {
 .nav {
   grid-column: 2;
   grid-row: 1;
-  align-items: start;
+  justify-self: end;
 }
 
 .nav-menu {
